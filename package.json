@@ -1,0 +1,19 @@
+{
+  "name": "ghmd",
+  "version": "0.0.1",
+  "description": "",
+  "main": "ghmd.js",
+  "bin" : {
+    "ghmd": "ghmd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxlu/ghmd.git"
+  },
+  "author": "Alex Lu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alxlu/ghmd/issues"
+  },
+  "homepage": "https://github.com/alxlu/ghmd#readme"
+}
