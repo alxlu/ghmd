@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "ghmd.js",
-  "bin" : {
+  "bin": {
     "ghmd": "ghmd.js"
   },
   "repository": {
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/alxlu/ghmd/issues"
   },
-  "homepage": "https://github.com/alxlu/ghmd#readme"
+  "homepage": "https://github.com/alxlu/ghmd#readme",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "github-markdown-css": "^2.0.9",
+    "highlight.js": "^8.6.0",
+    "marked": "^0.3.3"
+  },
+  "preferGlobal": true
 }
