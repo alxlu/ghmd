@@ -44,7 +44,7 @@ if (!program.args.length) {
   var highlightcss = fs.readFileSync(
     path.join(__dirname, 'node_modules/highlight.js/styles/github.css'),
     'utf8') + '\n</style>\n</head>\n' +
-    '<body style="min-width: 200px; max-width: 790px; margin: 0 auto; padding: 30px;"' +
+    '<body style="min-width: 200px; max-width: 790px; margin: 0 auto; padding: 30px; overflow: auto;"' +
     'class="markdown-body">\n';
 
   var foot = '\n</body>\n</html>';
