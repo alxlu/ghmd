@@ -37,12 +37,12 @@ if (!program.args.length) {
 
   var head = '<!docype html>\n<html>\n<head>\n<meta charset="utf-8" />\n<style>\n';
 
-  var githubcss = fs.readFileSync(
-    path.join(__dirname, 'node_modules/github-markdown-css/github-markdown.css'),
-    'utf8') + '\n';
+  var githubcssDir = path.join(require.resolve('github-markdown-css/package.json'), '../github-markdown.css');
 
-  var highlightcss = fs.readFileSync(
-    path.join(__dirname, 'node_modules/highlight.js/styles/github.css'),
+  var githubcss = fs.readFileSync(githubcssDir, 'utf8') + '\n';
+
+  var highlightcssDir = path.join(require.resolve('highlight.js/package.json'), '../styles/github.css');
+  var highlightcss = fs.readFileSync(highlightcssDir,
     'utf8') + '\n</style>\n</head>\n' +
     '<body style="min-width: 200px; max-width: 790px; margin: 0 auto; padding: 30px; overflow: auto;"' +
     'class="markdown-body">\n';
